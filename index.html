@@ -1,16 +1,33 @@
+<?php
+const CASINO_NAME_1 = '移民の町(異変前)・過去ダーマ';
+const CASINO_NAME_2 = '現代ダーマ';
+const CASINO_NAME_3 = 'コスタール';
+const CASINO_NAME_4 = '移民の町(異変後)';
+
+const CASINO_COIN_1 = '5枚';
+const CASINO_COIN_2 = '20枚';
+const CASINO_COIN_3 = '100枚';
+const CASINO_COIN_4 = '750枚';
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>ラッキーパネル</title>
+    <title>ラッキーパネル(3DS版)</title>
     <link rel="stylesheet" href="css/base.css" type="text/css">
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 		<script type="text/javascript" src="js/base.js"></script>
   </head>
   <body>
     <div class="wrapper">
+      <h1>ラッキーパネル(3DS版)</h1>
         <div class="pasteItem hidden bottom20">
           <div class="center" style="width:320px; margin:0 auto;">
+            <p  class="casino1 hidden"><?php echo CASINO_NAME_1;?> <?php echo CASINO_COIN_1;?></p>
+            <p class="casino2 hidden"><?php echo CASINO_NAME_2;?> <?php echo CASINO_COIN_2;?></p>
+            <p class="casino3 hidden"><?php echo CASINO_NAME_3;?> <?php echo CASINO_COIN_3;?></p>
+            <p class="casino4 hidden"><?php echo CASINO_NAME_4;?> <?php echo CASINO_COIN_4;?></p>
             <p class="red">現在選択中アイテム</p>
             <img class="pasteImg" src="img/0.bmp" style="width:80px;height:80px;" alt="">
             <input type="hidden" class="imgNo" value="0">
@@ -21,7 +38,6 @@
             <?php endfor; ?>
           </div>
         </div>
-        <!--<h2>使用するアイテムを選択してください。</h2>-->
         <p class="clearPanel hidden center font20" style="width:58px;height:58px;border: 1px solid #000;font-size:44px; margin:0 auto;" onclick="c();">C</p>
         <div class="selectItem">
           <img src="img/0.bmp" class="item img0 hidden" onclick="selectItem(0)" alt="">
@@ -43,11 +59,11 @@
           <?php endfor; ?>
         </div>
         <p class="top20">
-          <button type="button" name="button" onclick="selectCasino(1)">過去ダーマ神殿</button>
-          <button class="left20" type="button" name="button" onclick="selectCasino(2)">現代ダーマ神殿</button>
-          <button class="left20" type="button" name="button" onclick="selectCasino(3)">コスタール1</button>
-          <button class="left20" type="button" name="button" onclick="selectCasino(4)">コスタール2</button>
-          <button class="left20" type="button" name="button" onclick="selectCasino(5)">移民のカジノ</button>
+          <button type="button" name="button" onclick="selectCasino(1)"><?php echo CASINO_NAME_1;?> <?php echo CASINO_COIN_1;?></button>
+          <button class="left20" type="button" name="button" onclick="selectCasino(2)"><?php echo CASINO_NAME_2;?> <?php echo CASINO_COIN_2;?></button>
+          <button class="left20" type="button" name="button" onclick="selectCasino(3)"><?php echo CASINO_NAME_3;?> <?php echo CASINO_COIN_3;?></button>
+          <button class="left20" type="button" name="button" onclick="selectCasino(4)"><?php echo CASINO_NAME_4;?> <?php echo CASINO_COIN_4;?></button>
+
         </p>
         <p class="top40">
           <button type="button" name="button" onclick="submitItem()">選択したアイテムで確定</button>
