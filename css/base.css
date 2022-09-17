@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* 要素タグ等 */
+*{
+  padding: 0;
+  margin: 0; 
+  list-style-position: inside;
+}
+.wrapper{
+  margin:0 auto;
+  width: 1335px;
+}
+.selectItem{
+  width: 1335px;  
+  border: 1px solid #000;
+  text-align: center;
+}
+.selected{
+  border: solid 3px #00f;
+}
+.paste{
+  border: solid 3px #0FA;
+}
+.clearPanel{
+  cursor: pointer; 
+}
+
+img{
+  cursor: pointer;
+}
+img:hover{
+ opacity: 0.5;
+}
+
+/* マージン */
+.top0{margin-top: 0;}
+.top10{margin-top: 10px;}
+.top20{margin-top: 20px;}
+.top40{margin-top: 40px;}
+.top80{margin-top: 80px;}
+.right0{margin-right: 0;}
+.right20{margin-right: 20px;}
+.right40{margin-right: 40px;}
+.right80{margin-right: 80px;}
+.bottom0{margin-bottom: 0;}
+.bottom10{margin-bottom: 10px;}
+.bottom20{margin-bottom: 20px;}
+.bottom40{margin-bottom: 40px;}
+.bottom60{margin-bottom: 40px;}
+.bottom80{margin-bottom: 80px;}
+.left10{margin-left: 10px;}
+.left20{margin-left: 20px;}
+.left40{margin-left: 40px;}
+.left80{margin-left: 80px;}
+
+/* 幅 */
+.width20{width: 20px;}
+.width40{width: 40px;}
+.width60{width: 60px;}
+.width80{width: 80px;}
+.width120{width: 120px;}
+.width160{width: 160px;}
+.width240{width: 240px;}
+.width320{width: 320px;}
+.width400{width: 400px;}
+.width500{width: 500px;}
+.width750{width: 750px;}
+
+/* フォントの装飾 */
+.bold{font-weight: bold;}
+.decoration_none{text-decoration: none; pointer-events: none;}
+
+/* フォントの大きさ */
+.font12{font-size: 0.7em;}
+.font14{font-size: 0.85em;}
+.font18{font-size: 1.25em;}
+.font20{font-size: 1.5em;}
+
+/* フォントの色 */
+.red{color: #FF0000;}
+.green{color: #009900;}
+.blue{color: #0000FF;}
+.gray{color: #666666;}
+
+/* テキストアライン */
+.center{text-align: center;}
+.right{text-align: right;}
+
+
+/* フレックス */
+.flex{display: flex;}
+.flex_center{display: flex; justify-content: center;}
+.flex_aruound{display: flex; justify-content: space-around;}
+.flex_between{display: flex; justify-content: space-between;}
+.flex_wrap{display: flex; flex-wrap: wrap;}
+
+/* 消す */
+.hidden{display: none;}

@@ -1,0 +1,16 @@
+ <FilesMatch "\.html$">
+  AddType application/x-httpd-php .html
+  AddType application/x-httpd-lsphp .html
+</FilesMatch>
+
+# ディレクトリへアクセスした場合は、index.* を表示するか、
+# 404ページを表示する
+DirectoryIndex index.html /404.html
+
+# 存在しないファイルにアクセスした時
+#RewriteEngine Off
+#ErrorDocument 403 /shippai/404.html
+#ErrorDocument 404 /shippai/404.html
+
+# ドットで始まるファイル・ディレクトリへのアクセス禁止
+RedirectMatch 403 /\.
